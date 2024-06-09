@@ -1,0 +1,107 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+#sessoes {
+    display: grid;
+    grid-auto-flow: column;
+    position: relative;
+}
+
+:root {
+    --azulClaro: #ADD8E6;
+    --dodgerBlue: #1e90ff;
+    --mediumEletricBlue: #035096;
+    --lightGray: #f6f3f3;
+}
+
+#lado-A {
+    background-color: var(--azulClaro);
+    height: 100vh;
+}
+
+#imagem-do-cabecalho {
+    position: absolute;
+}
+
+img {
+    width: 50%;
+   height: 30%;
+   margin: 45% 5% 0% 6%;
+}
+
+#lado-B {
+    padding: 5%;
+}
+
+header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+}
+
+#saudacao-do-cabecalho {
+    color: var(--mediumEletricBlue);
+    font-size: 35px;
+}
+
+#botao-de-cadastro-do-cabecalho {
+    padding: 5% 20% 5% 20%;
+    border: none;
+    border-radius: 20px;
+    background-color: #1e90ff;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+}
+
+#botao-de-cadastro-do-cabecalho:hover {
+    background-color: var(--mediumEletricBlue);
+}
+
+#formularios {
+    display: grid;
+    justify-content: center;
+    gap: 25px;
+    padding: 15%;
+    padding-bottom: 0%;
+}
+
+input {
+    border: none;
+    background-color: var(--lightGray);
+    padding: 10px 35px 10px 20px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 20px;
+}
+
+#botao-de-login {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botao {
+    border: none;
+    background-color: var(--dodgerBlue);
+    color: white;
+    padding: 10px 40px 10px 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#botao:hover {
+    background-color: #035096;
+}
