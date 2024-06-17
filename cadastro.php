@@ -1,3 +1,21 @@
+<?php
+
+    if(isset($_POST['submit']))
+    {
+        include_once('config.php');
+
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $lastname = $_POST['lastname'];
+        $phone = $_POST['phone'];
+        $confirmpassword = $_POST['confirmpassword'];
+
+        $result = mysqli_query($conexao, "INSERT INTO usuarios(name,email,password,lastname,phone,confirmpassword) VALUES ('$name','$email','$password','$lastname','$phone','$confirmpassword')");
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -34,11 +52,11 @@
             </header>
     
             <div id="sessao-de-formularios">
-                <form action="">
+                <form action="cadastro.php" method="POST">
                     <div id="formulario">
                         <div class="sessao-de-inputs">
-                            <label for="firstname"> Primeiro nome </label> <br>
-                            <input type="text" name="firstname" placeholder="digite seu primeiro nome" required>
+                            <label for="name"> Primeiro nome </label> <br>
+                            <input type="text" name="name" placeholder="digite seu primeiro nome" required>
                         </div>
 
                         <div class="sessao-de-inputs">
@@ -66,11 +84,12 @@
                             <input type="password" name="confirmpassword" placeholder="********" maxlength="8" required>
                         </div>
                     </div>
+
+                    <div id="botao-de-cadastro">
+                        <button type="submit" name="submit" id="botao" > Cadastre-se </button>
+                    </div>
+
                 </form>
-    
-                <div id="botao-de-cadastro">
-                    <button type="submit" id="botao" > Cadastre-se </button>
-                </div>
             </div>
         </section>
     </div>
