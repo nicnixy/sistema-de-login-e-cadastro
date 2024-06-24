@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    background-image: url(https://i.postimg.cc/Gt33pqy7/fundo-home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+:root {
+    --azulClaro: #ADD8E6;
+    --dodgerBlue: #1e90ff;
+    --mediumEletricBlue: #035096;
+    --lightGray: #f6f3f3;
+}
+
+
+
+header {
+    background: var(--dodgerBlue);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a {
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 500px;
+    transition: all 0.5s;
+}
+
+ul li a:hover {
+    color: var(--azulClaro);
+}
+
+div {
+    padding: 55px;
+    color: var(--mediumEletricBlue);
+}
+
+span {
+    color: var(--dodgerBlue);
+}

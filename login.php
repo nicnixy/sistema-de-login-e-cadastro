@@ -28,7 +28,7 @@
                 <div>
                     <p> Não é um membro?</p>
                     <button id="botao-de-cadastro-do-cabecalho">
-                        <a href="cadastro.html"> Cadastre-se </a>
+                        <a href="cadastro.php"> Cadastre-se </a>
                     </button>
                 </div>
             </header>
